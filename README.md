@@ -4,12 +4,13 @@
 1. General Overview of data structures
 2. Complexity
 3. Arrays
-4. Stacks
-5. Queues
-6. Heap
-7. HashMap
-7. Tree
-8. Graph
+4. Linked List
+5. Stacks
+6. Queues
+7. Heap
+8. HashMap
+9. Tree
+10. Graph
 
 
 # Algorithm techniques to Cover:
