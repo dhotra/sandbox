@@ -7,7 +7,7 @@ public class ArrayTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int myArraySize = 10;
-		CreateArray(myArraySize + 5);
+		CreateArray(myArraySize);
 
 		for (int i = 0; i < myArraySize; ++i)
 			InsertElementAtIndex(i, i * 5);
@@ -15,6 +15,9 @@ public class ArrayTest {
 		Print();
 		AdjustedInsert(5, 42);
 		Print();
+		Delete(7);
+		Print();
+		
 	}
 
 	static void CreateArray(int size) {
@@ -40,6 +43,15 @@ public class ArrayTest {
 	}
 
 	static void Delete(int index) {
-
+		
+		for(int i=index; i<myArray.length-1;i++){
+			myArray[i]=myArray[i+1];	
+		}
+		myArray[myArray.length-1] = 0;	
 	}
-}
+	
+	static void FindElement(int value){
+	//print the index if value exists, otherwise print don't exist	
+	}
+	}
+
