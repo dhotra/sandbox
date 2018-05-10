@@ -3,6 +3,9 @@ package sandbox;
 public class insertValueInMiddleInAnArray {
 
 	public static void main(String[] args) {
+		
+/*
+ * Please don't use this code. this code is not correct. */
 
 		int[] myIntArray;
 
