@@ -17,7 +17,8 @@ public class ArrayTest {
 		Print();
 		Delete(7);
 		Print();
-		
+		FindElement(0);
+
 	}
 
 	static void CreateArray(int size) {
@@ -43,15 +44,24 @@ public class ArrayTest {
 	}
 
 	static void Delete(int index) {
-		
-		for(int i=index; i<myArray.length-1;i++){
-			myArray[i]=myArray[i+1];	
+
+		for (int i = index; i < myArray.length - 1; i++) {
+			myArray[i] = myArray[i + 1];
 		}
-		myArray[myArray.length-1] = 0;	
-	}
-	
-	static void FindElement(int value){
-	//print the index if value exists, otherwise print don't exist	
-	}
+		myArray[myArray.length - 1] = 0;
 	}
 
+	static void FindElement(int value) {
+		// print the index if value exists, otherwise print don't exist
+
+		for (int i = 0; i < myArray.length; i++) {
+
+			if (myArray[i] == value) {
+				System.out.println("Entered value is present at location" +i);
+				
+			}
+		}
+
+	}
+
+}
