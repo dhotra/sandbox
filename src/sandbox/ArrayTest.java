@@ -13,12 +13,10 @@ public class ArrayTest {
 			InsertElementAtIndex(i, i * 5);
 
 		Print();
-		AdjustedInsert(5, 42);
-		Print();
-		Delete(7);
-		Print();
-		FindElement(0);
-
+		/*
+		 * AdjustedInsert(5, 42); Print(); Delete(7); Print(); FindElement(0);
+		 * FindElement(900); FindElement(42);
+		 */
 	}
 
 	static void CreateArray(int size) {
@@ -31,7 +29,7 @@ public class ArrayTest {
 	}
 
 	static void Print() {
-		// System.out.println("Print Arrray: ");
+		// System.out.println("Print Array: ");
 		for (int i = 0; i < myArray.length; ++i)
 			System.out.print(myArray[i] + " ");
 		System.out.println();
@@ -57,10 +55,11 @@ public class ArrayTest {
 		for (int i = 0; i < myArray.length; i++) {
 
 			if (myArray[i] == value) {
-				System.out.println("Entered value is present at location" +i);
-				
+				System.out.println("Entered value " + value + " is present at index " + i);
+				return;
 			}
-		}
+		} // end of for loop
+		System.out.println("Entered value " + value + " Not found");
 
 	}
 
